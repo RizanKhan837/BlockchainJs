@@ -209,31 +209,36 @@ func()();  */
 // find
 // some
 // foreach
+// findIndex
 
 let a = [
     {
         name:"Rizwan Akram",
         age:18,
         id:1,
-        category:"A"
+        category:"A",
+        isChecked: true
     },
     {
         name:"Usman Rahim",
         age:16,
         id:2,
-        category:"A"
+        category:"A",
+        isChecked: false
     },
     {
         name:"Haseeb Alam",
         age:18,
         id:3,
-        category:"C"
+        category:"C",
+        isChecked: true
     },
     {
         name:"Aamir Sayab",
         age:20,
         id:4,
-        category:"B"
+        category:"B",
+        isChecked: false
     }
 ]
 
@@ -262,5 +267,24 @@ let b = a.filter(x => x.category == "A") // Shortest Way
 console.log(b);  */
 
 /*-------- 3. Find ------------*/
+
+/* let obj = a.find(x => x.name == "Rizwan Akram");
+console.log(obj) */
+
+
 /*-------- 4. Some ------------*/
+
+/* let status = a.some(x => x.isChecked)
+console.log(status) */
+
 /*-------- 5. Foreach ------------*/
+
+/* a.forEach(x=> {
+    x.inst = "SAIMS" //Adding  inst property
+})
+console.log(a) */
+
+/*-------- 6. FindIndex ------------*/
+
+/* let ind = a.findIndex(x => x.id == 3)
+console.log(ind) */
