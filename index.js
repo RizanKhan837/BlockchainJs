@@ -204,12 +204,12 @@ func()();  */
 
 /*-------- Array Function ------------*/
 
-// map
-// filter
-// find
-// some
-// foreach
-// findIndex
+// Map
+// Filter
+// Find
+// Some
+// Foreach
+// FindIndex
 
 let a = [
     {
