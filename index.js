@@ -1,5 +1,16 @@
 
-// let, var, const
+/* -------  let, var, const -----------*/
+/*=====================================*/
+
+/* var == is not a blockscope , reinitializable hota hai , re-assigning(yes),  hoisting(yes)
+
+   let == is a block scope, reinitializeable nahi hai is mn , re-assigning(yes)
+
+   const's == value doesn't change, also a blockscope , No reinitializaable, re-assigning(No),  hoisting(No) */
+
+
+// hoisting : apna scope chor kr document k top pr chala jata hai or global bann jata hai(accessable from everywhere)
+
 
 // var
 // block scope (n)
