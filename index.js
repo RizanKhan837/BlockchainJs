@@ -263,28 +263,28 @@ console.log(b)   */
 }) 
 // Or
 let b = a.filter(x => x.category == "A") // Shortest Way
-
 console.log(b);  */
 
 /*-------- 3. Find ------------*/
 
-/* let obj = a.find(x => x.name == "Rizwan Akram");
+/* let obj = a.find(x => x.name == "Rizwan Akram"); // Return Only One Index
 console.log(obj) */
 
 
 /*-------- 4. Some ------------*/
 
-/* let status = a.some(x => x.isChecked)
+/* let status = a.some(x => x.isChecked) //If Condition True In ANy Object Then It Return True
 console.log(status) */
 
 /*-------- 5. Foreach ------------*/
 
 /* a.forEach(x=> {
     x.inst = "SAIMS" //Adding  inst property
+    delete x.category
 })
 console.log(a) */
 
 /*-------- 6. FindIndex ------------*/
 
-/* let ind = a.findIndex(x => x.id == 3)
+/* let ind = a.findIndex(x => x.id == 3) // If True Then Return Index Else Return -1
 console.log(ind) */
