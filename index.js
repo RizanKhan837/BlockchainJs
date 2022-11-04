@@ -254,12 +254,12 @@ let a = [
 ]
 
 /*-------- 1. Map ------------*/
+// used for iteration in arrays
 
-/* a.map((e) => {
+/* a.map((e) => { // e= indexes
     console.log(e);
 })
  // Or
-
 let b = a.map((e) => {
     return e;
 })
@@ -271,8 +271,10 @@ console.log(b)   */
     if (x.category == "A") {
         return x;
     }
-}) 
+})
+
 // Or
+
 let b = a.filter(x => x.category == "A") // Shortest Way
 console.log(b);  */
 
@@ -297,5 +299,6 @@ console.log(a) */
 
 /*-------- 6. FindIndex ------------*/
 
-/* let ind = a.findIndex(x => x.id == 3) // If True Then Return Index Else Return -1
-console.log(ind) */
+let ind = a.findIndex(x => x.id == 3) // If True Then Return Index Else Return -1
+console.log(ind)
+
