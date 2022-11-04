@@ -286,16 +286,16 @@ console.log(obj) */
 
 /*-------- 4. Some ------------*/
 
-/* let status = a.some(x => x.isChecked) //If Condition True In ANy Object Then It Return True
-console.log(status) */
+let status = a.some(x => x.isChecked) //If Condition True In ANy Object Then It Return True
+console.log(status) 
 
 /*-------- 5. Foreach ------------*/
 
- a.forEach(x=> {
+/* a.forEach(x=> {
     x.inst = "SAIMS" //Adding  inst property
     delete x.category
 })
-console.log(a)
+console.log(a) */
 
 /*-------- 6. FindIndex ------------*/
 
