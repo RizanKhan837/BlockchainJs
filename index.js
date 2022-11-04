@@ -256,14 +256,14 @@ let a = [
 /*-------- 1. Map ------------*/
 // used for iteration in arrays
 
-/* a.map((e) => { // e= indexes
+ a.map((e) => { // e= indexes
     console.log(e);
 })
  // Or
 let b = a.map((e) => {
     return e;
 })
-console.log(b)   */
+console.log(b)   
 
 /*-------- 2. Filter ------------*/
 
@@ -280,8 +280,8 @@ console.log(b);  */
 
 /*-------- 3. Find ------------*/
 
-let obj = a.find(x => x.name == "Rizwan Akram"); // Return Only One Index
-console.log(obj) 
+/* let obj = a.find(x => x.name == "Rizwan Akram"); // Return Only One Index
+console.log(obj)  */
 
 
 /*-------- 4. Some ------------*/
