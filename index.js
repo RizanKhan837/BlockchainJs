@@ -291,14 +291,14 @@ console.log(status) */
 
 /*-------- 5. Foreach ------------*/
 
-/* a.forEach(x=> {
+ a.forEach(x=> {
     x.inst = "SAIMS" //Adding  inst property
     delete x.category
 })
-console.log(a) */
+console.log(a)
 
 /*-------- 6. FindIndex ------------*/
 
-let ind = a.findIndex(x => x.id == 3) // If True Then Return Index Else Return -1
-console.log(ind)
+/* let ind = a.findIndex(x => x.id == 3) // If True Then Return Index Else Return -1
+console.log(ind) */
 
