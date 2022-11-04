@@ -222,7 +222,7 @@ func()();  */
 // Foreach
 // FindIndex
 
-let a = [
+/* let a = [
     {
         name:"Rizwan Akram",
         age:18,
@@ -251,19 +251,19 @@ let a = [
         category:"B",
         isChecked: false
     }
-]
+] */
 
 /*-------- 1. Map ------------*/
 // used for iteration in arrays
 
- a.map((e) => { // e= indexes
+/* a.map((e) => { // e= indexes
     console.log(e);
 })
  // Or
 let b = a.map((e) => {
     return e;
 })
-console.log(b)   
+console.log(b)    */
 
 /*-------- 2. Filter ------------*/
 
