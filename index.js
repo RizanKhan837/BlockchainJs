@@ -198,8 +198,7 @@ a(b("abcs"));  */
 /* Agr Koi Func Apny Param Main 2sra Function Call Krrha Hai Tou Woh Higher Order Func Hai
    Ya Phir Return Main Ek Or Func Return Kry */
 
-
-// a(b("abcs"));  
+ a(b("abcs"));  
 
 /* let func = ()=> {
     console.log("main")
@@ -222,7 +221,7 @@ func()();  */
 // Foreach
 // FindIndex
 
-/* let a = [
+let a = [
     {
         name:"Rizwan Akram",
         age:18,
@@ -251,7 +250,7 @@ func()();  */
         category:"B",
         isChecked: false
     }
-] */
+] 
 
 /*-------- 1. Map ------------*/
 // used for iteration in arrays
