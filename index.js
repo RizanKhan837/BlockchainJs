@@ -198,7 +198,7 @@ a(b("abcs"));  */
 /* Agr Koi Func Apny Param Main 2sra Function Call Krrha Hai Tou Woh Higher Order Func Hai
    Ya Phir Return Main Ek Or Func Return Kry */
 
- a(b("abcs"));  
+// a(b("abcs"));  
 
 /* let func = ()=> {
     console.log("main")
