@@ -280,14 +280,14 @@ console.log(b);  */
 
 /*-------- 3. Find ------------*/
 
-/* let obj = a.find(x => x.name == "Rizwan Akram"); // Return Only One Index
-console.log(obj) */
+let obj = a.find(x => x.name == "Rizwan Akram"); // Return Only One Index
+console.log(obj) 
 
 
 /*-------- 4. Some ------------*/
 
-let status = a.some(x => x.isChecked) //If Condition True In ANy Object Then It Return True
-console.log(status) 
+/* let status = a.some(x => x.isChecked) //If Condition True In ANy Object Then It Return True
+console.log(status) */
 
 /*-------- 5. Foreach ------------*/
 
