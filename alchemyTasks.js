@@ -41,3 +41,20 @@ The orders are an array of objects, each with pizzas key inside: */
     }
     return total;
 } */
+
+
+/* The function halfValue takes an array of numbers. It should return a new array with all the original values halved.
+
+Odd numbers should be rounded up to the nearest whole number. */
+
+/* function halfValue(numbers) {
+    let num = [];
+    for(let i = 0; i < numbers.length; i++){
+        if (numbers[i] % 2 == 0) {
+            num[i] = numbers[i] / 2;
+        } else {
+            num[i] = Math.round(numbers[i] / 2);
+        }
+    }
+    return num;
+} */
