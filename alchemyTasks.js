@@ -28,11 +28,11 @@
 
 The orders are an array of objects, each with pizzas key inside: */
 
-/* const orders = [
+const orders = [
     { pizzas: 3 },
     { pizzas: 5 },
     { pizzas: 10 }
-]; */
+];
 
 /* function numberOfPizzas(orders) {
     let total = 0;
