@@ -47,7 +47,7 @@ The orders are an array of objects, each with pizzas key inside: */
 
 Odd numbers should be rounded up to the nearest whole number. */
 
-/* function halfValue(numbers) {
+function halfValue(numbers) {
     let num = [];
     for(let i = 0; i < numbers.length; i++){
         if (numbers[i] % 2 == 0) {
@@ -57,13 +57,13 @@ Odd numbers should be rounded up to the nearest whole number. */
         }
     }
     return num;
-} */
+}
 
 /* Write a function countVowels that takes in a string and counts how many vowels there are in the word. Vowels include: "a", "e", "i", "o", and "u".
 
 Handle lowercase and uppercase vowels. */
 
-function countVowels(str) {
+/* function countVowels(str) {
     let count = 0;
     for(let i =0; i< str.length; i++){
         if(str[i].toLowerCase() == "a" || str[i].toLowerCase() == "e" ||str[i].toLowerCase() == "i" ||str[i].toLowerCase() == "o" ||str[i].toLowerCase() == "u"){
@@ -71,4 +71,4 @@ function countVowels(str) {
         }
     }
     return count;
-}
+} */
