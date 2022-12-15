@@ -1,6 +1,6 @@
 /* Write a function that will take an array of numbers and return a new array that only contains unique numbers. */
 
-/* function unique(array) {
+function unique(array) {
     let arr = [];
     arr.push(array[0]);
 
@@ -12,7 +12,7 @@
         }
     }
     return arr;
-} */
+}
 
 /* Given an array of integers and a number, num, find all the occurrences of the number and remove it from the array. */
 
@@ -28,11 +28,11 @@
 
 The orders are an array of objects, each with pizzas key inside: */
 
-const orders = [
+/* const orders = [
     { pizzas: 3 },
     { pizzas: 5 },
     { pizzas: 10 }
-];
+]; */
 
 /* function numberOfPizzas(orders) {
     let total = 0;
