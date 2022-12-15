@@ -28,11 +28,11 @@
 
 The orders are an array of objects, each with pizzas key inside: */
 
-/* const orders = [
+const orders = [
     { pizzas: 3 },
     { pizzas: 5 },
     { pizzas: 10 }
-]; */
+];
 
 /* function numberOfPizzas(orders) {
     let total = 0;
@@ -46,7 +46,7 @@ The orders are an array of objects, each with pizzas key inside: */
 /* The function halfValue takes an array of numbers. It should return a new array with all the original values halved.
 
 Odd numbers should be rounded up to the nearest whole number. */
-
+/* 
 function halfValue(numbers) {
     let num = [];
     for(let i = 0; i < numbers.length; i++){
@@ -57,7 +57,7 @@ function halfValue(numbers) {
         }
     }
     return num;
-}
+} */
 
 /* Write a function countVowels that takes in a string and counts how many vowels there are in the word. Vowels include: "a", "e", "i", "o", and "u".
 
