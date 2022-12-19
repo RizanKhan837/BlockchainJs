@@ -94,3 +94,42 @@ Assume both arrays are the same length. */
     }
     return arr3;
 } */
+
+// let elements = ["e", "k", "e", "z", "i", "z"];
+// function countElements(elements) {
+//     let arr = [];
+//     arr.push(elements[0]);
+//     let obj = {};
+//     let count = 1;
+    
+//     for(let i=0; i< elements.length; i++){
+//         obj[elements[i]] = count;
+//         for (let index = 0; index < array.length; index++) {
+//             const element = array[index];
+//         }
+//     }
+//     return obj;
+// }
+// console.log(countElements(elements));
+
+/* Write a function countElements that takes in an array and returns an object a count of each element in the array. */
+let elements = ["e", "k", "e", "z", "i", "z"];
+
+function countElements(elements) {
+    let obj = {};
+    for(let i=0; i< elements.length; i++){
+        if(obj[elements[i]]){
+            obj[elements[i]]++;
+        }else{
+            obj[elements[i]] = 1;
+        }
+    }
+    return obj;
+}
+
+
+console.log(countElements(elements));
+
+
+
+
