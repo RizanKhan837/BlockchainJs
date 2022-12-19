@@ -95,25 +95,9 @@ Assume both arrays are the same length. */
     return arr3;
 } */
 
-// let elements = ["e", "k", "e", "z", "i", "z"];
-// function countElements(elements) {
-//     let arr = [];
-//     arr.push(elements[0]);
-//     let obj = {};
-//     let count = 1;
-    
-//     for(let i=0; i< elements.length; i++){
-//         obj[elements[i]] = count;
-//         for (let index = 0; index < array.length; index++) {
-//             const element = array[index];
-//         }
-//     }
-//     return obj;
-// }
-// console.log(countElements(elements));
-
 /* Write a function countElements that takes in an array and returns an object a count of each element in the array. */
-let elements = ["e", "k", "e", "z", "i", "z"];
+
+/* let elements = ["e", "k", "e", "z", "i", "z"];
 
 function countElements(elements) {
     let obj = {};
@@ -126,9 +110,29 @@ function countElements(elements) {
     }
     return obj;
 }
+console.log(countElements(elements)); */
 
+/* The function playerHandScore that takes in a string of face cards (Jack, Queen, and King only) and returns the total score of the players hand.
 
-console.log(countElements(elements));
+The cards are represented by the first letter in the name of the card:
+
+A "K" is 4 points
+A "Q" is 3 points
+A "J" is 2 points */
+
+/* function playerHandScore(hand) {
+    let score = 0;
+    for(let i = 0; i < hand.length; i++){
+        if(hand[i] == "K"){
+            score += 4;
+        }else if(hand[i] == "Q"){
+            score += 3;
+        }else if(hand[i] == "J"){
+            score += 2;
+        }
+    }
+    return score;
+} */
 
 
 
