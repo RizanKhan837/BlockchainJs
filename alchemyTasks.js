@@ -1,3 +1,6 @@
+/* --------------  Arrays -------------*/
+/*=====================================*/
+
 /* Write a function that will take an array of numbers and return a new array that only contains unique numbers. */
 
 /* function unique(array) {
@@ -25,8 +28,10 @@
 } */
 
 /* Given an array of pizza orders, return the total number of pizzas ordered.
-
 The orders are an array of objects, each with pizzas key inside: */
+
+/* -------------  Objects -------------*/
+/*=====================================*/
 
 /* const orders = [
     { pizzas: 3 },
@@ -42,6 +47,8 @@ The orders are an array of objects, each with pizzas key inside: */
     return total;
 } */
 
+/* ------------  Exercise -------------*/
+/*=====================================*/
 
 /* The function halfValue takes an array of numbers. It should return a new array with all the original values halved.
 
@@ -134,6 +141,9 @@ A "J" is 2 points */
     return score;
 } */
 
+/* --------  Logical Operators --------*/
+/*=====================================*/
+
 /* The function friendName currently retrieves the name property from the friend.
 The problem is, sometimes friend is undefined. When this is the case, let's return undefined without throwing an exception. */
 
@@ -158,3 +168,8 @@ Complete the carCrossing function to return true if and only if one car is cross
         return false;
     }
 } */
+
+/* ------------  Exception ------------*/
+/*=====================================*/
+
+/*  An exception that cannot be recovered from is often referred to as a fatal exception. */
