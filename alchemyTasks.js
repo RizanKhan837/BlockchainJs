@@ -134,6 +134,13 @@ A "J" is 2 points */
     return score;
 } */
 
+/* The function friendName currently retrieves the name property from the friend.
+The problem is, sometimes friend is undefined. When this is the case, let's return undefined without throwing an exception. */
 
-
-
+/* function friendName(friend) {
+    if(friend && friend.name){
+        return friend.name;
+    }else{
+        return undefined;
+    }
+} */
