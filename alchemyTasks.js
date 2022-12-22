@@ -173,3 +173,17 @@ Complete the carCrossing function to return true if and only if one car is cross
 /*=====================================*/
 
 /*  An exception that cannot be recovered from is often referred to as a fatal exception. */
+
+/* The argument fn is a function that will throw an error when invoked. Catch the error that is thrown when invoking fn.
+
+The tests will pass as long as the function is called and the exception is caught. */
+
+/* function catchError(fn) {
+    try{
+        fn();
+    }
+    catch(ex){
+        return ex;
+    }
+    return false;
+} */
