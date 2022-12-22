@@ -187,3 +187,33 @@ The tests will pass as long as the function is called and the exception is caugh
     }
     return false;
 } */
+
+/* --------- TYPE CONVERSION ----------*/
+/*=====================================*/
+
+/* Given a string, convert it to a number.
+
+If the string is not a number, return 0. */
+
+/* function convertToNumber(str) {
+    let num = Number(str);
+    if(isNaN(num)){ 
+        return 0;
+    }else{
+        return num;
+    }
+} */
+
+/* Given two values a and b, combine them together as strings and return the result. The values may be a number, a boolean or a string. */
+
+/* function combineToString(a, b) {
+    let c = `${a}` + `${b}`;
+    return c;
+} */
+
+// Or
+
+/* function combineToString(a, b) {
+    let c = a.toString() + b.toString();
+    return c;
+} */
