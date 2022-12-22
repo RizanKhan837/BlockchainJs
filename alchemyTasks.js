@@ -217,3 +217,15 @@ If the string is not a number, return 0. */
     let c = a.toString() + b.toString();
     return c;
 } */
+
+/* Given some value a return whether or not the value is truthy */
+
+/*  Remember that truthy values are any value excluding falsey values: false, 0, "", null, undefined, and NaN. */
+
+/* function isTruthy(a) {
+    if(a){
+        return true;
+    }else{
+        return false;
+    }
+} */
