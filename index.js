@@ -57,19 +57,19 @@ b = 123 */
 
 /*----- Slicing ------*/
 
-"An apple".slice(0,2); // An
+/* "An apple".slice(0,2); // An
 "The 40 Thieves".slice(4,8); // 40 T
 
 //If the last index is not provided, slice will continue until the end of the string:
 
-"Please Slice Me".slice(7); // Slice Me
+"Please Slice Me".slice(7); // Slice Me */
 
 /*----- IndexOf ------*/
 
-"Hello".indexOf("e"); // 1
+/* "Hello".indexOf("e"); // 1
 "abca".indexOf("a"); // 0 
 "abc".indexOf("q"); // -1 
-"happy dog bark".indexOf("dog"); // 6
+"happy dog bark".indexOf("dog"); // 6 */
 
 
 
@@ -166,7 +166,7 @@ function abc(a){
 }
 
 let [var1, var2, var3] = a; // save first 3 index
-let [,,, var3] = a; // returns 'd'
+//let [,,, var3] = a; // returns 'd'
 let [var4] = abc("abc");
 
 console.log(var1);
@@ -241,7 +241,7 @@ func()();  */
 // Foreach
 // FindIndex
 
-let a = [
+/* let a = [
     {
         name:"Rizwan Akram",
         age:18,
@@ -270,7 +270,7 @@ let a = [
         category:"B",
         isChecked: false
     }
-] 
+]  */
 
 /*-------- 1. Map ------------*/
 // used for iteration in arrays

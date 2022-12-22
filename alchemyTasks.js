@@ -229,3 +229,37 @@ If the string is not a number, return 0. */
         return false;
     }
 } */
+
+/* ----------- Keys To Note -----------*/
+/*=====================================*/
+
+/* Web browsers quickly adopt these features and add them to new versions. However, these means older versions of the browser do not support these features. For this reason, transpilers such as babeljs exist. These transpilers will convert new language features into code that older browsers support. You can configure transpilers for specific browser support and features you'd like to use. */
+
+/* ---------- Rest Parameter ----------*/
+/*=====================================*/
+
+// The rest parameters syntax can assign function arguments as an array. For example: 
+
+/* function log(...args) {
+    console.log(args);
+}
+
+log(1, 2, 3, 4, 5); // [1, 2, 3, 4, 5] */
+
+/* Here we are passing five individual arguments to the log function, the rest syntax is ...args, which is assigning an array with all of the arguments to args.
+
+You can also grab the rest of the parameters: */
+
+/* function log(a, b, ...args) {
+    console.log(args);
+}
+
+log(1, 2, 3, 4, 5); // [3, 4, 5] */
+
+/*  Here a and b will be assigned the first two arguments while ...args will be assigned the remaining three arguments in an array.
+
+This syntax can also be used in destructuring: */
+
+const [a, b, ...others] = [1, 2, 3, 4, 5];
+
+console.log(others); // [3, 4, 5]
