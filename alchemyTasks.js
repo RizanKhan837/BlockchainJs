@@ -260,6 +260,6 @@ log(1, 2, 3, 4, 5); // [3, 4, 5] */
 
 This syntax can also be used in destructuring: */
 
-const [a, b, ...others] = [1, 2, 3, 4, 5];
+/* const [a, b, ...others] = [1, 2, 3, 4, 5];
 
-console.log(others); // [3, 4, 5]
+console.log(others); // [3, 4, 5] */
