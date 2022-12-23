@@ -222,13 +222,13 @@ If the string is not a number, return 0. */
 
 /*  Remember that truthy values are any value excluding falsey values: false, 0, "", null, undefined, and NaN. */
 
-/* function isTruthy(a) {
+function isTruthy(a) {
     if(a){
         return true;
     }else{
         return false;
     }
-} */
+}
 
 /* ----------- Keys To Note -----------*/
 /*=====================================*/
