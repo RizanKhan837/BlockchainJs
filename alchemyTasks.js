@@ -147,13 +147,13 @@ A "J" is 2 points */
 /* The function friendName currently retrieves the name property from the friend.
 The problem is, sometimes friend is undefined. When this is the case, let's return undefined without throwing an exception. */
 
-/* function friendName(friend) {
+function friendName(friend) {
     if(friend && friend.name){
         return friend.name;
     }else{
         return undefined;
     }
-} */
+}
 
 /* There's a river that runs right between two towns. In order for cars to cross the river, we built a bridge!
 
@@ -260,6 +260,6 @@ log(1, 2, 3, 4, 5); // [3, 4, 5] */
 
 This syntax can also be used in destructuring: */
 
-const [a, b, ...others] = [1, 2, 3, 4, 5];
+/* const [a, b, ...others] = [1, 2, 3, 4, 5];
 
-console.log(others); // [3, 4, 5]
+console.log(others); // [3, 4, 5] */
