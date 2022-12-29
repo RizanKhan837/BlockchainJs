@@ -213,22 +213,22 @@ If the string is not a number, return 0. */
 
 // Or
 
-function combineToString(a, b) {
+/* function combineToString(a, b) {
     let c = a.toString() + b.toString();
     return c;
-}
+} */
 
 /* Given some value a return whether or not the value is truthy */
 
 /*  Remember that truthy values are any value excluding falsey values: false, 0, "", null, undefined, and NaN. */
 
-/* function isTruthy(a) {
+function isTruthy(a) {
     if(a){
         return true;
     }else{
         return false;
     }
-} */
+}
 
 /* ----------- Keys To Note -----------*/
 /*=====================================*/
