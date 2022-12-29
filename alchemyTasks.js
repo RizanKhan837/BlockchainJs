@@ -94,13 +94,13 @@ Handle lowercase and uppercase vowels. */
 
 Assume both arrays are the same length. */
 
-/* function sumTogether(arr1, arr2) {
+function sumTogether(arr1, arr2) {
     let arr3 = [];
     for(let i = 0; i < arr1.length; i++){
         arr3[i] = arr1[i] + arr2[i];
     }
     return arr3;
-} */
+}
 
 /* Write a function countElements that takes in an array and returns an object a count of each element in the array. */
 
@@ -147,13 +147,13 @@ A "J" is 2 points */
 /* The function friendName currently retrieves the name property from the friend.
 The problem is, sometimes friend is undefined. When this is the case, let's return undefined without throwing an exception. */
 
-function friendName(friend) {
+/* function friendName(friend) {
     if(friend && friend.name){
         return friend.name;
     }else{
         return undefined;
     }
-}
+} */
 
 /* There's a river that runs right between two towns. In order for cars to cross the river, we built a bridge!
 
