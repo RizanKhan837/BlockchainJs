@@ -256,10 +256,10 @@ You can also grab the rest of the parameters: */
 
 log(1, 2, 3, 4, 5); // [3, 4, 5] */
 
- Here a and b will be assigned the first two arguments while ...args will be assigned the remaining three arguments in an array.
+/*  Here a and b will be assigned the first two arguments while ...args will be assigned the remaining three arguments in an array.
 
-This syntax can also be used in destructuring:
+This syntax can also be used in destructuring: */
 
-/* const [a, b, ...others] = [1, 2, 3, 4, 5];
+const [a, b, ...others] = [1, 2, 3, 4, 5];
 
-console.log(others); // [3, 4, 5] */
+console.log(others); // [3, 4, 5]
