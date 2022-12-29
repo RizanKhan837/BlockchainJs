@@ -94,13 +94,13 @@ Handle lowercase and uppercase vowels. */
 
 Assume both arrays are the same length. */
 
-function sumTogether(arr1, arr2) {
+/* function sumTogether(arr1, arr2) {
     let arr3 = [];
     for(let i = 0; i < arr1.length; i++){
         arr3[i] = arr1[i] + arr2[i];
     }
     return arr3;
-}
+} */
 
 /* Write a function countElements that takes in an array and returns an object a count of each element in the array. */
 
