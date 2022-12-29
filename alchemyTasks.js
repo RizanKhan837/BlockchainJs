@@ -222,13 +222,13 @@ If the string is not a number, return 0. */
 
 /*  Remember that truthy values are any value excluding falsey values: false, 0, "", null, undefined, and NaN. */
 
-function isTruthy(a) {
+/* function isTruthy(a) {
     if(a){
         return true;
     }else{
         return false;
     }
-}
+} */
 
 /* ----------- Keys To Note -----------*/
 /*=====================================*/
@@ -256,9 +256,9 @@ You can also grab the rest of the parameters: */
 
 log(1, 2, 3, 4, 5); // [3, 4, 5] */
 
-/*  Here a and b will be assigned the first two arguments while ...args will be assigned the remaining three arguments in an array.
+ Here a and b will be assigned the first two arguments while ...args will be assigned the remaining three arguments in an array.
 
-This syntax can also be used in destructuring: */
+This syntax can also be used in destructuring:
 
 /* const [a, b, ...others] = [1, 2, 3, 4, 5];
 
