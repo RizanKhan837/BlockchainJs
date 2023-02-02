@@ -263,3 +263,66 @@ This syntax can also be used in destructuring: */
 /* const [a, b, ...others] = [1, 2, 3, 4, 5];
 
 console.log(others); // [3, 4, 5] */
+
+
+/* -------- Spread Arguments  --------*/
+/*====================================*/
+
+/* The spread syntax allows an iterable such as an array to be expanded in places where zero or more arguments are expected. */
+
+/* const numbers = [1, 2, 3];
+
+function add(a, b, c) {
+  return a + b + c;
+}
+
+const sum = add(...numbers); // Here the numbers are being spread out to the variables a, b and c.
+
+console.log(sum); // 6 */
+
+
+/* ----------Practice Questions--------- */
+
+/* Write a function eitherNotBoth that takes in a number and returns true if the the number is divisible by either 3 or 5, but not both. Return false otherwise. */
+
+/* function eitherNotBoth(num) {
+    if(num%3 == 0 || num%5 == 0){
+        if (num % 3 == 0 && num % 5 == 0) {
+            return false;
+        }else{
+            return true;
+        }
+        
+    }else{
+        return false;
+    }
+} */
+
+/* Write a function fizzBuzz that takes an array of numbers and replaces any number divisible by three with the word "fizz" and any number divisible by five with the word "buzz". If a number is divisible by both three and five, replace it with "fizzbuzz"
+
+Once the appropriate numbers are replaced, return a concatenated string with only the words "fizz" or "buzz" included. */
+
+/* function fizzBuzz(numbers) {
+    let str = '';
+    for(let i=0; i < numbers.length; i++){
+        if(numbers[i] % 3 == 0 || numbers[i] % 5 == 0){
+            if(numbers[i] % 3 == 0 && numbers[i] % 5 == 0){
+                //numbers[i] = "fizzbuzz";
+                str += 'fizzbuzz';
+            }else if(numbers[i] % 3 == 0 && numbers[i] % 5 != 0){
+                str += 'fizz';
+                //numbers[i] = "fizz";
+            }else if(numbers[i] % 5 == 0 && numbers[i] % 3 != 0){
+                str += 'buzz';
+                //numbers[i] = "buzz";
+            }
+        }else{
+            str += '';
+        }
+    }
+    return str;
+}
+let num = [1,3,5,15];
+let str = fizzBuzz(num);
+console.log(str); */
+
