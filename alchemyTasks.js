@@ -459,3 +459,22 @@ Shape.prototype.move = function(x,y) {
     this.position.x += x;
     this.position.y += y;
 } */
+
+/* -------- Linking Prototypes---------- */
+
+/* Circle.prototype = Object.create(Shape.prototype); */
+
+/* Now our Circle prototype inherits methods from the Shape Prototype! Any new circle will have a move method. */
+
+/* -------- Practice Questions-------- */
+
+/* Use Object.create to link Circle.prototype to Shape.prototype.
+
+This will ensure that any methods on Shape.prototype will also become available on new Circle instances. For instance, we'll be able to use circle.move(1,1); just like we did on the shape instance! */
+
+/* function Circle(x, y, radius) {
+    Circle.prototype = Object.create(Shape.prototype);
+    Shape.call(this, x, y);
+    // store radius on this
+    this.radius =  radius;
+} */
