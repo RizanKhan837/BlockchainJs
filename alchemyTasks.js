@@ -326,3 +326,108 @@ let num = [1,3,5,15];
 let str = fizzBuzz(num);
 console.log(str); */
 
+/* -------- Call Versus Apply  -------*/
+/*====================================*/
+
+/* Call and Apply are very similar methods. They both exist on every JavaScript function and they both allow you to set the context this.
+
+The difference comes when you want to pass arguments to the function: */
+
+/* function totalThings(a, b, c) {
+    return `There are ${a + b + c} ${this}`;
+}
+
+Let's say we wanted this string to be: "There are 15 Students". There are two ways we could go about it. We could use call:
+
+totalThings.call("Students", 10, 3, 2);
+
+Or we can use apply:
+
+totalThings.apply("Students", [10, 3, 2]); */
+
+
+/* In both cases, this is set to "Students" and the arguments a, b and c are the values 10, 3 and 2 respectively.
+
+The difference is that call takes a list of arguments, while apply takes a single array of arguments. */
+
+/* -------- Binding---------- */
+
+/* Rather than relying on a function to be called with the correct this at the time of invocation, we can bind functions: */
+
+/* function thisName() {
+    return this.name;
+}
+
+const newFunction = thisName.bind({ name: 'Ted' }); 
+
+console.log(newFunction()); // Ted
+console.log(thisName()); // undefined */ 
+
+/* Here we are binding the thisName function to a new object with the name property set to "Ted". This means that when we call newFunction, this will be bound to the new object. */
+
+
+/* -------- Call Site---------- */
+
+/* The call site is the location in code where a function is called. */
+
+/* const obj = {
+    value: 2,
+    getValue: function() {
+        return this.value;
+    }
+} */
+
+/* console.log( obj.getValue() ); // 2 */
+
+
+/* ------- Unbound Function-------- */
+
+/* const YEAR = (1000 * 60 * 60 * 24 * 365);
+
+function addYear() {
+    setTimeout(function() {
+        this.age++;
+    }, YEAR);
+}
+
+const person = { name: 'Fred', age: 29 }
+
+addYear.call(person); */
+
+/* -------- Arrow Syntax---------- */
+
+/* There is another way to define function expressions, referred to as "Arrow Syntax". The difference between the arrow syntax and the traditional function syntax is in behavior with this. The arrow syntax will actually capture the context of the surrounding function here: */
+
+/* function addYear() {
+    setTimeout(() => {
+        this.age++;
+    }, YEAR);
+} */
+
+/* -------- Practice Questions-------- */
+
+/* Within the function Celebrity, a method is used to fetch the celebrity's age. The second argument to fetchAge is a callback function. The callback function will receive age as an argument.
+
+ Unfortunately, due to the function call-site, this will be re-defined to not refer to the celebrity. Running the tests without modifying the code will result in a TypeError.
+
+Fix this.age to refer to the same this as the function Celebrity. */
+
+
+// Before
+
+/* function Celebrity(name) {
+    this.name = name;
+
+    fetchAge(this.name, function (age) {
+        this.age = age;
+    });
+} */
+
+// After
+/* function Celebrity(name) {
+    this.name = name;
+
+    fetchAge(this.name, (age) =>{
+        this.age = age;
+    });
+} */
