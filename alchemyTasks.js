@@ -478,3 +478,38 @@ This will ensure that any methods on Shape.prototype will also become available 
     // store radius on this
     this.radius =  radius;
 } */
+
+/* Complete the Rectangle function and link its prototype to Shape's prototype.
+
+This will be similar to our Circle! Rectangle will be a Shape plus a couple properties: height and width. We'll want to store these on the Rectangle instance. */
+
+/* function Rectangle(x, y, width, height) {
+    Rectangle.prototype = Object.create(Shape.prototype);
+    Shape.call(this, x, y);
+    // store width and height on this
+    this.width = width;
+    this.height = height;
+} */
+
+/* Create a function flip on the rectangle prototype! This function will switch the height and width dimensions of the rectangle. It will take no arguments. */
+
+/* Rectangle.prototype.flip = function() {
+    let temp = this.width;
+    this.width = this.height;
+    this.height = temp;
+} */
+
+// Or 
+
+/* function Rectangle(x, y, height, width) {
+    Rectangle.prototype.flip = function(){
+        this.height = width;
+        this.width = height;
+    }
+    
+    Rectangle.prototype = Object.create(Shape.prototype);
+    Shape.call(this, x, y);
+    this.height = height;
+    this.width = width;
+}
+ */
