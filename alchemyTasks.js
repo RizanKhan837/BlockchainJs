@@ -511,5 +511,94 @@ This will be similar to our Circle! Rectangle will be a Shape plus a couple prop
     Shape.call(this, x, y);
     this.height = height;
     this.width = width;
+}*/
+
+
+/* ------ Classes Vs Prototype  -------*/
+/*====================================*/
+
+/* Classes and Prototypes allow you to create objects and implement inheritance, classes provide a more traditional object-oriented syntax, while prototypes provide a lower-level mechanism for object creation in JavaScript. */
+
+/* -------- Classes---------- */
+
+/* class Car {
+  constructor(make, model) {
+    this.make = make;
+    this.model = model;
+  }
+
+  drive() {
+    console.log(`Driving a ${this.make} ${this.model}`);
+  }
 }
- */
+
+const car = new Car("Tesla", "Model 3");
+car.drive(); // Driving a Tesla Model 3 */
+
+/* -------- Prototypes---------- */
+
+/* function Car(make, model) {
+    this.make = make;
+    this.model = model;
+}
+
+Car.prototype.drive = function() {
+    console.log(`Driving a ${this.make} ${this.model}`);
+}
+
+const car = new Car("Tesla", "Model 3");
+car.drive(); // Driving a Tesla Model 3 */
+
+
+
+/* ---- Binary and Hexadecimal  -----*/
+/*====================================*/
+
+
+/* -------- Introduction to Binary---------- */
+
+/*  Binary is a number system that uses only 0 and 1 as symbols.
+    In comparison, the decimal system uses 10 symbols (0 to 9) and is commonly used by humans.
+*/
+
+/* -------- Representation of Values---------- */
+
+/*  Decimal can represent 10 values with its symbols (0 to 9).
+    Binary can represent 2 values with its symbols (0 and 1).
+    The number of values represented in decimal is 10 ** n, where n is the number of characters.
+    The number of values represented in binary is 2 ** n, where n is the number of characters. 
+*/
+
+
+/* -------- Counting---------- */
+
+/*  The counting process in decimal involves wrapping around the symbol range in the least significant position and  incrementing the next most significant number.
+    The same counting rules apply for counting binary, but with a shorter symbol range (0 and 1). */
+
+
+/* -------- Defining Keywords---------- */
+
+/*  Bit: a single character in binary.
+    Nibble: four bits together.
+    Byte: eight bits together.
+*/
+
+/* -------- Hexadecimal---------- */
+
+/* Introduction to Hexadecimal
+Hexadecimal is a commonly used system to represent raw data due to its ease of conversion to and from binary.
+
+16 Symbols
+Hexadecimal is named so because it uses 16 symbols - 0 through 9 and a through f. The decimal values for a through f are 10 through 15. The characters in hexadecimal can be either upper-case or lower-case and are case-insensitive.
+
+0x Prefix
+A string of hexadecimal characters is typically denoted with the prefix 0x. For example, a random string of hexadecimal characters might look like this: 0x4fd979de3edf0f56aa9716b898ec8. The prefix 0x simply denotes that the rest of the string is in hexadecimal, with the actual value being everything that comes after the prefix.
+
+Conversion to Binary
+Converting hexadecimal to binary is quite straightforward. Each character in hexadecimal represents 16 values and maps to a nibble or four bits. A mapping table can easily be used to convert between hexadecimal and binary. For example, the binary string 11110100110110010111 can be written as 0x1c3af.
+
+Advantages of Hexadecimal
+Hexadecimal is preferred to the binary format because it is easier to type and is commonly used to display large data values.
+
+Conclusion
+Hexadecimal is widely used in raw data representation and will be seen often in the study of cryptography systems. Its easy conversion to and from binary makes it a useful tool for display large data values. */
