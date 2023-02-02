@@ -326,6 +326,7 @@ let num = [1,3,5,15];
 let str = fizzBuzz(num);
 console.log(str); */
 
+
 /* -------- Call Versus Apply  -------*/
 /*====================================*/
 
@@ -430,4 +431,31 @@ Fix this.age to refer to the same this as the function Celebrity. */
     fetchAge(this.name, (age) =>{
         this.age = age;
     });
+} */
+
+
+
+/* ----------- Prototype  ------------*/
+/*====================================*/
+
+/* Create a function move that will be added to the Shape.prototype. This function should take two arguments: x and y.
+
+It should move the shape's position by adding the corresponding arguments value: */
+
+/* const shape = new Shape(1, 1);
+
+shape.move(1, 4);
+
+console.log( shape.position.x ); // 2
+console.log( shape.position.y ); // 5 */
+
+/* // Our Shape "Constructor"
+function Shape(x, y) {
+    // store x and y in this.position
+    this.position = {x, y}
+}
+
+Shape.prototype.move = function(x,y) {
+    this.position.x += x;
+    this.position.y += y;
 } */
