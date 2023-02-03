@@ -253,3 +253,82 @@ console.log(a); // [{id: 0, score: 15},{id: 0, score: 30}] */
     });
     
 } */
+
+/* We can apply the same filtering logic to booleans.
+
+Given an array of booleans, keep only the true values: */
+
+/* function onlyTrue(array) {
+    return array.filter((x)=>{
+        return (x===true);
+    });
+} */
+
+/* Given an array of strings, keep only the strings whose length is at most 3. */
+
+/* function shortStrings(array) {
+    return array.filter((x)=>{
+        return (x.length <= 3);
+    });
+}
+ */
+
+/* Find students whose score is at least 90. */
+
+/* function topStudents(array) {
+    return array.filter((x)=>{
+        return (x.grade >= 90);
+    });
+} */
+
+/* Given an array of elements, keep only the first 3 elements.
+
+Return an array with only these three elements included. */
+
+/* function firstThree(array) {
+    return array.filter((x, i)=>{
+        if(i<3){
+            return (x);
+        }
+    });
+} */
+
+/* Given an array of values, return an array of unique values. */
+
+/* Keep in mind what you learned in the previous stage about the index passed to the filter function. It will continue to increase, while indexOf will always return the first index of the value. */
+
+/* function unique(array) {
+    return array.filter((x,i)=>{
+        return (array.indexOf(x) === i);
+    });
+} */
+
+
+
+/* --------- Array Reduce  ---------*/
+/*==================================*/
+
+/*  Array Reduce
+    This function is primarily meant to take an array and reduce it down to a single value
+*/
+
+/*  When should you use reduce? 
+
+    Use reduce when you have an array of elements you'd like to combine into a single value or object. 
+*/
+/*  How It Works? 
+
+    In the reduce function, two arguments are provided, an accumulator and the current value. In the case of summing numbers, the accumulator is the sum after each iteration. The current value will be each element in turn.
+*/
+
+/* ----- Practice Questions ----- */
+
+/* Applying what you've learned, complete the function sum by adding together the accumulator and the currentValue. */
+
+/*
+function sum(numbers) {
+    return numbers.reduce((accumulator, currentValue) => {
+        return (accumulator + currentValue);
+    });
+}
+*/
