@@ -245,6 +245,8 @@ console.log(a); // [{id: 0, score: 15},{id: 0, score: 30}] */
     return (el === 1);
 })); */
 
+/* ----- Practice Questions ----- */
+
 /* Given an array of elements, find the elements whose value is less than 5. Return the resulting array. */
 
 /* function lessThanFive(array) {
@@ -304,7 +306,6 @@ Return an array with only these three elements included. */
 } */
 
 
-
 /* --------- Array Reduce  ---------*/
 /*==================================*/
 
@@ -316,6 +317,7 @@ Return an array with only these three elements included. */
 
     Use reduce when you have an array of elements you'd like to combine into a single value or object. 
 */
+
 /*  How It Works? 
 
     In the reduce function, two arguments are provided, an accumulator and the current value. In the case of summing numbers, the accumulator is the sum after each iteration. The current value will be each element in turn.
