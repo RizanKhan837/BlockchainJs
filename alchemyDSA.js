@@ -387,3 +387,31 @@ Don't depend on the types to only be "fruit" and "vegetable". We will be testing
         return accumulator;
     }, {});
 } */
+
+
+
+/* ---------- Recursion  -----------*/
+/*==================================*/
+
+
+/* 
+  Definition: 
+  Recursion is a technique in computer programming where a function calls itself.
+*/
+
+/* 
+   How it works:
+   A function will continue to call itself until a base case is reached, at which point the recursion stops. The base case is determined by the changing arguments of the function over time, similar to the conditions in loops. 
+*/
+
+/* 
+  Iteration vs. Recursion: 
+  Anything that can be solved iteratively (with a loop) can be solved with recursion and vice-versa. However, iteration is more performant and clearer for simple problems. Recursion is best used in cases where a problem can be divided into smaller problems, such as working with tree-like data structures. 
+*/
+
+/* 
+  Tips for learning recursion: 
+  Start practicing on simple problems and build up your skills, as working with tree-like data structures can be challenging.  
+*/
+
+/* ----- Practice Questions ----- */
