@@ -517,3 +517,75 @@ class OperationManager {
         }
     }
 } */
+
+/* Create a method addLast on LinkedList which takes a node and adds it to the end of our linked list. */
+
+/* class LinkedList {
+    constructor() {
+        this.head = null;
+        this.tail = null;
+    }
+
+    addFirst(node) {
+        if (this.head === null) {
+            this.head = node;
+            this.tail = node;
+        }
+        else {
+            node.next = this.head;
+            this.head = node;
+        }
+    }
+
+    addLast(node) {
+        if (this.head === null) {
+            this.head = node;
+            this.tail = node;
+        }
+        else {
+            this.tail.next = node;
+            this.tail = node;
+        }
+    }
+} */
+
+/* Write a method indexOf on LinkedList which takes node and returns a number index that indicates where the node is in the list.
+
+To determine if a node is equal to another node you can simply compare them with (node1 === node2). This will evaluate to true if they are the same node. */
+
+/* class LinkedList {
+    constructor() {
+        this.head = null;
+    }
+
+    addFirst(node) {
+        node.next = this.head;
+        this.head = node; 
+    }
+
+    addLast(node) {
+        if(!this.head) {
+            this.head = node;
+            return;
+        }
+        
+        let ref = this.head;
+        while (ref.next) ref = ref.next;
+        ref.next = node;
+    }
+    indexOf(node){
+
+    }
+} */
+
+
+/* Retrieve a prop that is deeply nested within objects
+   i.e. { prop: { prop: { prop: 3 }}} => 3 */
+
+
+/* function deepRetrieval(obj) {
+    while(typeof(obj.prop) !== "object"){
+        return obj.prop;
+    }
+    return deepRetrieval(obj.prop);
+}  */
