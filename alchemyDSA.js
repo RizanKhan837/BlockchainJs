@@ -415,3 +415,105 @@ Don't depend on the types to only be "fruit" and "vegetable". We will be testing
 */
 
 /* ----- Practice Questions ----- */
+
+
+
+
+/* ------------ Stack  -------------*/
+/*==================================*/
+
+/* const { MAX_STACK_SIZE } = require('./config');
+
+class Stack {
+    constructor() {
+        this.items = [];
+    }
+    push(item) {
+        if(this.items.length >= MAX_STACK_SIZE){
+            throw new Error("Stack OverFlow");
+        }
+        else{
+            this.items.push(item);
+        }
+    }
+
+    pop() {
+        if(this.isEmpty()){
+            throw new Error("Stack Underflow");
+        }else{
+            return this.items.pop();
+        }
+    }
+
+    isEmpty() {
+        if(this.items.length == 0){
+            return true;
+        }
+    }
+    peek() {
+        return this.items[this.items.length -1];
+    }
+} */
+
+
+/* Let's add two stacks to our OperationsManager constructor: operations and undos.
+
+You'll notice the Stack file has already been imported for you in OperationsManager.js. To create a new stack you can simply invoke it after the new operator new Stack().
+
+ We'll store operations and undos on the operations manager instance. Similar to how we stored items on our stack, use this to refer to the instance and create the instance variable for both stacks. (i.e. this.operations).
+
+Next, implement addOperation. This function will take the operation argument and simply add it to the top of our operations stack. */
+
+/* Let's go ahead and implement undo and redo within OperationsManager. */
+
+/* const Stack = require('./Stack');
+
+class OperationManager {
+    constructor() {
+        this.operations = new Stack();
+        this.undos = new Stack();
+    }
+
+    addOperation(operation) {
+        this.operations.push(operation);
+    }
+
+    undo() {
+        return this.undos.push(this.operations.pop());
+        
+    }
+
+    redo() {
+        return this.operations.push(this.undos.pop());
+    }
+} */
+
+/* Let's go ahead and implement redoAll where we keep redo-ing until we have no more undos left. */
+
+/* const Stack = require('./Stack');
+
+class OperationManager {
+    constructor() {
+        this.operations = new Stack();
+        this.undos = new Stack();
+    }
+
+    addOperation(operation) {
+        this.operations.push(operation);
+    }
+
+    undo() {
+        return this.undos.push(this.operations.pop());
+        
+    }
+
+    redo() {
+        return this.operations.push(this.undos.pop());
+    }
+
+    redoAll(){
+        while(!this.undos.isEmpty()){
+            this.redo();
+        }
+    }
+} */
