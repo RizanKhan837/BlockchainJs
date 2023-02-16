@@ -44,3 +44,38 @@ console.log(message); */
     }, 1000);
 }
 module.exports = runCallback; */
+
+/* Let's add the ability to wire up multiple callback functions.
+
+Each time onClose is called, we'll need to store an additional callback function on our dialog class. Once close is called, we'll invoke all of those callback functions.
+
+ This may require you to initialize an array on the Dialog class. If you need some place for initialization code, the constructor is a great place! Remember the constructor is called once, when a new instance is created. */
+
+/* ---------Multiple Callbacks---------- */
+
+ /* class Dialog {
+    constructor(){
+        this.call = [];
+    }
+
+    onClose(callbackFunction) {
+        this.call.push(callbackFunction());
+    }
+
+    close() {
+        // invoke the callback
+        return this.call;
+    }
+}
+ */
+
+/* Map each element in the array to its new value returned by the callback function.
+
+Just like the previous stage, you'll want to run a function on each element in the array. Only this time you'll need to create a new array which you'll return at the end of the map iteration. */
+
+/* function map(arr, callback) {
+    const array = arr.map((x,i)=>{
+        return callback(x, i);
+    });
+    return array;
+} */

@@ -186,7 +186,7 @@ console.log(name, age, contact) */
 
 
 /* ----------  Functions -------------*/
-/*=====================================*/
+/*====================================*/
 
 /*-------- Arrow Function ------------*/
 // save space , fast, consize , readable
@@ -207,11 +207,13 @@ let res = c(); */
 
 /*-------- Callback Function ------------*/
 
-/* let a = a => a;
-let b = (e) => {
+ // here we are setting a function in a variable and passing it as an argument
+//let a = (a) =>{ return a; } //or let a = a => a;
+
+let b = (e) => { // here we are setting a function in a variable and passing it as an argument
     console.log(e)
 }
-a(b("abcs"));  */ 
+a(b("abcs"));  // here we are calling a function and passing another function as an argument
 
 /*-------- Higher Order Function ------------*/
 
