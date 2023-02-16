@@ -79,3 +79,54 @@ Just like the previous stage, you'll want to run a function on each element in t
     });
     return array;
 } */
+
+
+/* ----- Asynchronous Function  -----*/
+/*====================================*/
+
+/* Asynchronous code is used in JavaScript when we need to wait for something to happen before continuing. Some common examples include waiting for user input or server response. There are two ways to write asynchronous code:
+
+Using a callback function passed as an argument to a function. */
+
+
+/* runAnimation(function() { 
+    // do something after the animation is complete 
+}); */
+
+/* Using promises, which give us an alternate way to configure our callback functions. */
+
+
+/* const animationPromise = runAnimation();
+animationPromise.then(() => { 
+    // do something after the animation is complete 
+}); */
+
+/*Promises allow us to return promises from functions, and wire up callbacks in a different way. 
+
+ Overall, using promises can make our asynchronous code more readable and maintainable. */
+
+ 
+/* -------- Practice Questions-------- */
+
+/* We need to make some food! 
+
+When the customer asks for food, the request function will be invoked. This function should call the function makeFood which takes food as its only argument. The function makeFood will return a promise.
+
+The makeFood function is imported at the top of the file from Kitchen.
+
+Add a callback function to the .then of the makeFood promise. Once it is called the food is ready! At that point set the order isReady is true.*/
+
+/* const { makeFood } = require('./Kitchen');
+
+class Order {
+    constructor() {
+        this.isReady = false;
+    }
+    request(food) {
+        const promise = makeFood(food);
+
+        promise.then(()=>{
+            this.isReady = true;
+        });
+    }
+} */
