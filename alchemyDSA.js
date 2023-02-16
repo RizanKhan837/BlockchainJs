@@ -574,7 +574,6 @@ To determine if a node is equal to another node you can simply compare them with
         ref.next = node;
     }
     indexOf(node){
-
     }
 } */
 
