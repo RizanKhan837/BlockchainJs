@@ -130,3 +130,28 @@ class Order {
         });
     }
 } */
+
+/* What if the kitchen was all out of a particular ingredient? Let's be sure to catch an error from the makeFood promise.
+
+When we need to create a new order, we'll request the food: */
+
+/* const { makeFood } = require('./Kitchen');
+
+class Order {
+    constructor() {
+        this.isReady = false;
+        this.error = "No Burgers Left"
+    }
+    request(food) {
+        const promise = makeFood(food);
+
+        promise.then(()=>{
+            this.isReady = true;
+        });
+
+        promise.catch((err)=>{
+            return this.error;
+        });
+    }
+} */
+
