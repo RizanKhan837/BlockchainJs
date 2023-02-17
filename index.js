@@ -210,10 +210,10 @@ let res = c(); */
  // here we are setting a function in a variable and passing it as an argument
 //let a = (a) =>{ return a; } //or let a = a => a;
 
-let b = (e) => { // here we are setting a function in a variable and passing it as an argument
+/* let b = (e) => { // here we are setting a function in a variable and passing it as an argument
     console.log(e)
 }
-a(b("abcs"));  // here we are calling a function and passing another function as an argument
+a(b("abcs")); */  // here we are calling a function and passing another function as an argument
 
 /*-------- Higher Order Function ------------*/
 
