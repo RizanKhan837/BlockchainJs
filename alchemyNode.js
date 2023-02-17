@@ -234,4 +234,78 @@ async function handleResults(patientId) {
 
 
 
-/*  */
+/* ------------ Pact  --------------*/
+/*====================================*/
+
+/* We'll need to declare a new constructor on Pact. This constructor will take an executor function as it's only argument.
+
+The executor function should be called immediately from the constructor with two arguments of it's own, both of which are new functions. */
+
+/* Let's ensure that resolve calls the .then callback with the resolve value!
+
+In the last stage, we passed two functions to the executor function. The first of these functions is the resolve function. This function should invoke the callback function passed into the then function.
+
+ We're going to need to set a class member variable in our then function that will store the function for later. */
+
+/* class Pact {
+    // add methods to return on the instance
+
+    constructor(executor){
+        this.thenFns = [];
+        this.catchFns = [];
+        
+        executor(function resolve(value){
+            this.thenFns.forEach((fn) => fn(value))
+        }, function reject(value){
+            this.catchFns.forEach((fn) => fn(value))
+        });
+    }
+    then(resolve){
+        this.thenFns.push(resolve);
+    }
+    catch(reject){
+        this.catchFns.push(reject);
+    }
+} */
+
+/* Our Pact class wouldn't be complete if we couldn't wire up multiple .then and .catch callbacks!
+
+Let's give it a shot. So we're trying accomplish this: */
+
+/* let pact = new Pact((resolve, reject) => {
+    setTimeout(() => {
+        resolve(42);
+    }, 100);
+});
+pact.then((val) => {
+    console.log(val); // 42
+});
+pact.then((val) => {
+    console.log(val); // 42
+}); */
+
+
+/* class Pact {
+    // add methods to return on the instance
+
+    constructor(executor){
+        this.thenFns = [];
+        this.catchFns = [];
+
+        executor(function resolve(value){
+            this.thenFns.forEach((fn) => fn(value))
+        }
+        , function reject(value){
+            this.catchFns.forEach((fn) => fn(value))
+        }
+        );
+    }
+    then(resolve){
+        this.thenFns.push(resolve);
+    }
+    catch(reject){
+        this.catchFns.push(reject);
+    }
+} */
+    
+
