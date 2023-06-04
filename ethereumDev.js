@@ -21,3 +21,62 @@ function findColor(hash) {
         }
     }
 } */
+
+        /* PUBLIC KEY CRYPTOGRAPHY */
+
+// 2. Create a function that takes a message and returns a hash.
+/* const { keccak256 } = require("ethereum-cryptography/keccak");
+const { utf8ToBytes } = require("ethereum-cryptography/utils");
+
+function hashMessage(message) {
+    const bytes = utf8ToBytes(message);
+    // hash the message using keccak256
+    const hash = keccak256(bytes);
+
+    return hash;
+    
+}
+
+module.exports = hashMessage; */
+
+
+// 3. Create a function that takes a message and returns a signature.
+
+/* const secp = require("ethereum-cryptography/secp256k1");
+const hashMessage = require('./hashMessage');
+
+const PRIVATE_KEY = "6b911fd37cdf5c81d4c0adb1ab7fa822ed253ab0ad9aa18d77257c88b29b718e";
+
+async function signMessage(msg) {
+    let messageHash = hashMessage(msg);
+    return secp.sign(messageHash, PRIVATE_KEY, { recovered: true });
+}
+
+module.exports = signMessage; */
+
+
+// 4. Create a function that takes a message, signature, and recovery bit and returns the public key.
+
+/* const secp = require("ethereum-cryptography/secp256k1");
+const hashMessage = require("./hashMessage");
+
+async function recoverKey(message, signature, recoveryBit) {
+    let hash = hashMessage(message);
+    return secp.recoverPublicKey(hash, signature, recoveryBit);
+}
+
+module.exports = recoverKey; */
+
+
+// 5. Create a function that takes a public key and returns the address.
+/* const secp = require("ethereum-cryptography/secp256k1");
+const { keccak256 } = require("ethereum-cryptography/keccak");
+
+function getAddress(publicKey) {
+   let first = publicKey.slice(0,2);
+   let hash = keccak256(publicKey.slice(1));
+
+   return hash.slice(-20);
+}
+
+module.exports = getAddress; */
