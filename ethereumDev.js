@@ -22,7 +22,7 @@ function findColor(hash) {
     }
 } */
 
-        /* PUBLIC KEY CRYPTOGRAPHY */
+/* PUBLIC KEY CRYPTOGRAPHY */
 
 // 2. Create a function that takes a message and returns a hash.
 /* const { keccak256 } = require("ethereum-cryptography/keccak");
@@ -39,7 +39,6 @@ function hashMessage(message) {
 
 module.exports = hashMessage; */
 
-
 // 3. Create a function that takes a message and returns a signature.
 
 /* const secp = require("ethereum-cryptography/secp256k1");
@@ -54,7 +53,6 @@ async function signMessage(msg) {
 
 module.exports = signMessage; */
 
-
 // 4. Create a function that takes a message, signature, and recovery bit and returns the public key.
 
 /* const secp = require("ethereum-cryptography/secp256k1");
@@ -66,7 +64,6 @@ async function recoverKey(message, signature, recoveryBit) {
 }
 
 module.exports = recoverKey; */
-
 
 // 5. Create a function that takes a public key and returns the address.
 /* const secp = require("ethereum-cryptography/secp256k1");
@@ -81,51 +78,50 @@ function getAddress(publicKey) {
 
 module.exports = getAddress; */
 
-
-    /* Mining */
+/* Mining */
 
 // 6. Create a function that takes a block and returns the hash of the block.
 
-/*  const SHA256 = require('crypto-js/sha256');
-    const TARGET_DIFFICULTY = BigInt(0x0fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff);
-    const MAX_TRANSACTIONS = 10;
-    
-    const mempool = [];
-    const blocks = [];
-    
-    function addTransaction(transaction) {
-        // TODO: add transaction to mempool
-        mempool.push(transaction)
-    }
-    
-    function mine() {
-        // TODO: mine a block
-        const block = {
-            id: 1
-        };
-    
-        block.id = blocks.length;
-        let arr = [];
-        for (let i =0; i< mempool.length; i++){
-            if(block.transactions <= MAX_TRANSACTIONS){
-                block.transactions.push(mempool[i]);
-                mempool.shift();
-            }
-        }
-        
-        block.transactions = arr;
-    
-        let stringify = JSON.stringify(block);
-        block.hash = SHA256(stringify);
-        blocks.push(block);
-    }
-    
-    module.exports = {
-        TARGET_DIFFICULTY,
-        MAX_TRANSACTIONS,
-        addTransaction, 
-        mine, 
-        blocks,
-        mempool
-    }; */
+/* const SHA256 = require("crypto-js/sha256");
+const TARGET_DIFFICULTY =
+  BigInt(0x0fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff);
+const MAX_TRANSACTIONS = 10;
 
+const mempool = [];
+const blocks = [];
+
+function addTransaction(transaction) {
+  // TODO: add transaction to mempool
+  mempool.push(transaction);
+}
+
+function mine() {
+  // TODO: mine a block
+  const block = {
+    id: 1,
+  };
+
+  block.id = blocks.length;
+  let arr = [];
+  for (let i = 0; i < mempool.length; i++) {
+    if (block.transactions <= MAX_TRANSACTIONS) {
+      block.transactions.push(mempool[i]);
+      mempool.shift();
+    }
+  }
+
+  block.transactions = arr;
+
+  let stringify = JSON.stringify(block);
+  block.hash = SHA256(stringify);
+  blocks.push(block);
+}
+
+module.exports = {
+  TARGET_DIFFICULTY,
+  MAX_TRANSACTIONS,
+  addTransaction,
+  mine,
+  blocks,
+  mempool,
+}; */
