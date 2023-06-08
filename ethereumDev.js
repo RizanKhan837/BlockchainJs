@@ -86,7 +86,7 @@ module.exports = getAddress; */
 
 // 6. Create a function that takes a block and returns the hash of the block.
 
-/*     const SHA256 = require('crypto-js/sha256');
+/*  const SHA256 = require('crypto-js/sha256');
     const TARGET_DIFFICULTY = BigInt(0x0fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff);
     const MAX_TRANSACTIONS = 10;
     
@@ -128,3 +128,4 @@ module.exports = getAddress; */
         blocks,
         mempool
     }; */
+
