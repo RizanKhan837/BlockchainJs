@@ -80,3 +80,51 @@ function getAddress(publicKey) {
 }
 
 module.exports = getAddress; */
+
+
+    /* Mining */
+
+// 6. Create a function that takes a block and returns the hash of the block.
+
+/*     const SHA256 = require('crypto-js/sha256');
+    const TARGET_DIFFICULTY = BigInt(0x0fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff);
+    const MAX_TRANSACTIONS = 10;
+    
+    const mempool = [];
+    const blocks = [];
+    
+    function addTransaction(transaction) {
+        // TODO: add transaction to mempool
+        mempool.push(transaction)
+    }
+    
+    function mine() {
+        // TODO: mine a block
+        const block = {
+            id: 1
+        };
+    
+        block.id = blocks.length;
+        let arr = [];
+        for (let i =0; i< mempool.length; i++){
+            if(block.transactions <= MAX_TRANSACTIONS){
+                block.transactions.push(mempool[i]);
+                mempool.shift();
+            }
+        }
+        
+        block.transactions = arr;
+    
+        let stringify = JSON.stringify(block);
+        block.hash = SHA256(stringify);
+        blocks.push(block);
+    }
+    
+    module.exports = {
+        TARGET_DIFFICULTY,
+        MAX_TRANSACTIONS,
+        addTransaction, 
+        mine, 
+        blocks,
+        mempool
+    }; */
