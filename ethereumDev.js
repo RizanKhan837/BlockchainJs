@@ -125,3 +125,96 @@ module.exports = {
   blocks,
   mempool,
 }; */
+
+
+/* Inside the mine function, pull transactions off the mempool and include them in the block in an array called transactions
+Remove each transaction you include in the block from the mempool
+Add the transactions array to the block before hashing the block
+ 
+Do not include more transactions in the block than the MAX_TRANSACTIONS limit. */
+
+/* const SHA256 = require('crypto-js/sha256');
+const TARGET_DIFFICULTY = BigInt(0x0fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff);
+const MAX_TRANSACTIONS = 10;
+
+const mempool = [];
+const blocks = [];
+
+function addTransaction(transaction) {
+    // TODO: add transaction to mempool
+    mempool.push(transaction)
+}
+
+function mine() {
+    // TODO: mine a block
+    const block = {
+        id: 1,
+        transactions: []
+    };
+
+    block.id = blocks.length;
+    
+    for (let i =0; i < mempool.length; i++){
+        if(block.transactions.length <= MAX_TRANSACTIONS){
+          block.transactions = mempool[i];
+        }
+        mempool.shift();
+    }
+    
+    //block.transactions = arr;
+    let stringify = JSON.stringify(block);
+    block.hash = SHA256(stringify);
+    blocks.push(block);
+}
+
+module.exports = {
+    TARGET_DIFFICULTY,
+    MAX_TRANSACTIONS,
+    addTransaction, 
+    mine, 
+    blocks,
+    mempool
+}; */
+
+
+/* Now it's time to actually mine the block. This is where we get the work part of proof of work!
+
+In the mine function, prior to hashing the block, add a nonce property. This property should start at 0
+Keep changing the nonce until you find a hash that is less than the TARGET_DIFFICULTY */
+
+/* const SHA256 = require('crypto-js/sha256');
+const TARGET_DIFFICULTY = BigInt(0x0fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff);
+const MAX_TRANSACTIONS = 10;
+const mempool = [];
+const blocks = [];
+
+function addTransaction(transaction) {
+    mempool.push(transaction);
+}
+
+function mine() {
+    let transactions = [];
+    while (transactions.length < MAX_TRANSACTIONS && mempool.length > 0) {
+        transactions.push(mempool.pop());
+    }
+    const block = { id: blocks.length, transactions }
+    block.nonce = 0;
+    let hash;
+    while (true) {
+        hash = SHA256(JSON.stringify(block)).toString();
+        if (BigInt(`0x${hash}`) < TARGET_DIFFICULTY) {
+            break;
+        }
+        block.nonce++;
+    }
+    blocks.push({ ...block, hash });
+}
+
+module.exports = {
+    TARGET_DIFFICULTY,
+    MAX_TRANSACTIONS,
+    addTransaction,
+    mine,
+    mempool,
+    blocks,
+}; */
