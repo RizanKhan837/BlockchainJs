@@ -209,12 +209,4 @@ function mine() {
     }
     blocks.push({ ...block, hash });
 }
-
-module.exports = {
-    TARGET_DIFFICULTY,
-    MAX_TRANSACTIONS,
-    addTransaction,
-    mine,
-    mempool,
-    blocks,
-}; */
+*/
