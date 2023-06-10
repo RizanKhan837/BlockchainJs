@@ -22,7 +22,7 @@ function findColor(hash) {
     }
 } */
 
-/* PUBLIC KEY CRYPTOGRAPHY */
+/** PUBLIC KEY CRYPTOGRAPHY **/
 
 // 2. Create a function that takes a message and returns a hash.
 /* const { keccak256 } = require("ethereum-cryptography/keccak");
