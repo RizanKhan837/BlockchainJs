@@ -1,4 +1,5 @@
-// Etherum Development
+/* ---------- Ethereum Dev  ------------*/
+/*======================================*/
 
 // 1. Create a function that takes a hash and returns a color.
 
@@ -22,7 +23,8 @@ function findColor(hash) {
     }
 } */
 
-/** PUBLIC KEY CRYPTOGRAPHY **/
+/* ------ Public Key Cryptography  ------*/
+/*=======================================*/
 
 // 2. Create a function that takes a message and returns a hash.
 /* const { keccak256 } = require("ethereum-cryptography/keccak");
@@ -78,7 +80,8 @@ function getAddress(publicKey) {
 
 module.exports = getAddress; */
 
-/* Mining */
+/* ------------ Mining  --------------*/
+/*====================================*/
 
 // 6. Create a function that takes a block and returns the hash of the block.
 
@@ -210,3 +213,23 @@ function mine() {
     blocks.push({ ...block, hash });
 }
 */
+
+
+/* ---- BLOCKCHAIN DATA STRUCTURE  -----*/
+/*======================================*/
+
+// 7. Create a function that takes a block and returns the hash of the block.
+
+/* const SHA256 = require('crypto-js/sha256');
+
+class Block {
+    constructor(data){
+        this.data = data;
+    }
+
+    toHash() {
+        return SHA256(this.data  +  this.previousHash);
+    }
+} */
+
+
