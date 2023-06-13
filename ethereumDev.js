@@ -233,14 +233,14 @@ class Block {
 } */
 
 
-// The Blockchain.js file contains the Blockchain class with a chain array. Let's add the Genesis Block to this array.
-//  Create a new Block in the Blockchain constructor then add it to the chain array.
+/* The Blockchain.js file contains the Blockchain class with a chain array. Let's add the Genesis Block to this array.
+   Create a new Block in the Blockchain constructor then add it to the chain array.
 
-// Let's create an addBlock function on our Blockchain class.
-// This function should take in a new block and add it to the chain array:
+   Let's create an addBlock function on our Blockchain class.
+   This function should take in a new block and add it to the chain array:
 
-// Add a previousHash property to each block. The value of this property should be the hash of the block before it in the chain.
-// Use this previousHash property in the calculation of the block's hash.
+   Add a previousHash property to each block. The value of this property should be the hash of the block before it in the chain.
+   Use this previousHash property in the calculation of the block's hash. *\
 
 
 /* const Block = require('./Block');
