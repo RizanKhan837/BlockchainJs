@@ -81,7 +81,7 @@ function getAddress(publicKey) {
 module.exports = getAddress; */
 
 /* ------------ Mining  --------------*/
-/*====================================*/
+/*======================*/
 
 // 6. Create a function that takes a block and returns the hash of the block.
 
@@ -216,7 +216,7 @@ function mine() {
 
 
 /* ---- BLOCKCHAIN DATA STRUCTURE  -----*/
-/*======================================*/
+/*================================*/
 
 // 7. Create a function that takes a block and returns the hash of the block.
 
@@ -241,7 +241,6 @@ class Block {
 
    Add a previousHash property to each block. The value of this property should be the hash of the block before it in the chain.
    Use this previousHash property in the calculation of the block's hash. *\
-
 
 /* const Block = require('./Block');
 
